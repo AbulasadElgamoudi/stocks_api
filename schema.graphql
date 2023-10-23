@@ -1,0 +1,11 @@
+type OtherStockData {
+  ticker: String!
+  highest: Float!
+  lowest: Float!
+  trading_volume: Float!
+  historical_prices: [Float]!
+}
+
+type Query {
+  dataForStocks(ticker: String!): OtherStockData
+}
